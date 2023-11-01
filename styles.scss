@@ -58,6 +58,11 @@ p {
   line-height: 9.5rem;
   color: rgb(255, 255, 255);
 }
+@mixin h2Desktop {
+  @include headings;
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
 
 //IMAGES
 %images {
@@ -70,17 +75,24 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 260px;
+  width: 25rem;
   @include headings;
   font-size: 2rem;
   color: #ffffff;
   background-color: #151515;
   border: none;
-  margin: 2rem 0rem;
+  margin: 3rem 0rem;
   padding: 0;
-  height: 50px;
+  height: 6rem;
+
+  & .btn-cta {
+    padding-left: 3rem;
+  }
 
   & .btn-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     background-color: #d5966c;
     width: 50px;
@@ -95,7 +107,7 @@ button {
 
 //body
 
-//grid-container (will be switched on in media queries
+//grid-container (grid will be switched on in media queries- this is just default mobile styling on the container)
 .grid-container {
   @extend %spacing;
   padding: 8rem 0rem;
@@ -204,8 +216,9 @@ footer {
   .hero-text {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
-    width: 75vw;
+    width: 80vw;
     padding-right: 0rem;
 
     & h1 {
@@ -219,10 +232,22 @@ footer {
     }
   }
 
+  p {
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+  }
+
+  h2 {
+    @include h2Desktop;
+  }
+
   .grid-container {
     margin: 4rem 8rem;
     & img {
       height: 100%;
+    }
+    & :nth-child(5) {
+      padding: 4rem;
     }
   }
   .grid-top-left {

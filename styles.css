@@ -41,7 +41,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 260px;
+  width: 25rem;
   font-family: "Big Shoulders Display", sans-serif;
   font-size: 6rem;
   font-weight: 800;
@@ -52,11 +52,17 @@ button {
   color: #ffffff;
   background-color: #151515;
   border: none;
-  margin: 2rem 0rem;
+  margin: 3rem 0rem;
   padding: 0;
-  height: 50px;
+  height: 6rem;
+}
+button .btn-cta {
+  padding-left: 3rem;
 }
 button .btn-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   background-color: #d5966c;
   width: 50px;
@@ -155,8 +161,9 @@ footer .social-icons {
   .hero-text {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
-    width: 75vw;
+    width: 80vw;
     padding-right: 0rem;
   }
   .hero-text h1 {
@@ -176,11 +183,28 @@ footer .social-icons {
   .hero-text .hero-para-btn {
     max-width: 30vw;
   }
+  p {
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+  }
+  h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
+    color: #151515;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
   .grid-container {
     margin: 4rem 8rem;
   }
   .grid-container img {
     height: 100%;
+  }
+  .grid-container :nth-child(5) {
+    padding: 4rem;
   }
   .grid-top-left {
     margin: auto;
